@@ -7,6 +7,7 @@ window.onload = function() {
 }
 
 function generation(){
+document.getElementById('id3').innerHTML = null;
   image = [];
   for (let i =1 ; i< 53; i++){
      image.push("images/"+i+".png")
@@ -15,7 +16,6 @@ function generation(){
       img.weight = 80
       img.height = 85
       document.getElementById('id3').appendChild(img)
-
   }
 
 }
@@ -25,10 +25,10 @@ function brassage_carte(image) {
   moitie_deck = image.length/2;
   nouveau_paquet = []
   for (let i = 0; i < moitie_deck; i++) {
-    let a = image[i]
-    let b = image[i+moitie_deck] 
-    nouveau_paquet.push(a)
-    nouveau_paquet.push(b)
+    let paquet1 = image[i]
+    let paquet2 = image[i + moitie_deck] 
+    nouveau_paquet.push(paquet1)
+    nouveau_paquet.push(paquet2)
   }
   
   return nouveau_paquet;
@@ -47,53 +47,4 @@ function brassage() {
   }
 
   image = nouveau
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

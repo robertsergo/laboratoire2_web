@@ -1,6 +1,6 @@
 
 
-#id{
+#id_titre{
 	text-align: center; 
 	color : blue;
 }
@@ -12,18 +12,15 @@
 	background-color:greenyellow;
 	color:grey;
 	height: 50px;
-    text-align: center;
-	
+    text-align: center;	
 }
 
 
 
-.di{
+.affiche{
 	margin:0px auto 0px auto;
 	height:345px;
 	width:800px;
-
-	
 }
 
 
